@@ -1,0 +1,11 @@
+#Folders IDES
+.idea
+
+#Folder dist
+/dist
+
+#Folder node_modules
+/node_modules
+
+#cache
+/.parcel-cache
