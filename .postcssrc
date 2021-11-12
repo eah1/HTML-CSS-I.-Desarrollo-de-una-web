@@ -1,6 +1,5 @@
 {
   "plugins": {
     "autoprefixer": true,
-    "postcss-custom-selectors": true,
   }
 }
