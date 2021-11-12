@@ -30,7 +30,6 @@ p {
 }
 
 a {
-    text-decoration: none;
     color: inherit;
     margin-top: auto;
     margin-left: auto;
@@ -75,7 +74,7 @@ a {
 }
 
 .links a:link {
-    color: #265301;
+    color: blu;
 }
 
 .links a:visited {

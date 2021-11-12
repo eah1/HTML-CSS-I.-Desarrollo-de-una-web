@@ -47,7 +47,7 @@ function renderCategory(category) {
 
     let categoryLinkP = createElement("p");
 
-    let categoryLink = createElement("a", "nav-link");
+    let categoryLink = createElement("a", "links");
     categoryLink.href = `${category.fileHTML}.html`;
     categoryLink.innerHTML  = 'Más información';
 
