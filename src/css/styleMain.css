@@ -140,6 +140,48 @@ a {
         width: 70%;
         height: 25%;
     }
+}
 
+.anim-typewriter {
+    animation: typewriter 4s steps(44) 1s 1 normal both,
+    blinkTextCursor 500ms steps(44) infinite normal;
+}
+
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+    to {
+        width: 24em;
+    }
+}
+
+@keyframes blinkTextCursor {
+    from {
+        border-right-color: white;
+    }
+    to {
+        border-right-color: transparent;
+    }
+}
+
+.anim-title {
+    animation-name: change-color, grow-shrink, expand;
+    animation-duration: 8s, 5s, 8s;
+    animation-iteration-count: 1;
+}
+
+@keyframes change-color {
+    25% { color: #ea5106; }
+    50% { color: black; }
+    75% { color: #ea5106; }
+}
+
+@keyframes grow-shrink {
+    50% { transform: scale(1.5); }
+}
+
+@keyframes expand {
+    50% { word-spacing: 20px; }
 }
 

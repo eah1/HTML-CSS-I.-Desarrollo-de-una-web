@@ -33,7 +33,7 @@ categories.forEach((category) =>{
 function renderCategory(category) {
     let categoryPage = createElement("div");
 
-    let categoryName = createElement("h4", null, category.title)
+    let categoryName = createElement("h4", "anim-title", category.title)
     categoryPage.append(categoryName);
 
     let divImage = createElement("div")
