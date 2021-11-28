@@ -4,25 +4,29 @@ let categories = [
         "fileHTML": "experienceWeightlessness",
         "title": "Experimenta la ingravidez",
         "description": "La empresa Zero G ofrece vuelos suborbitales en los que podrás experimentar la ingravidez. Para lograrlo utilizan un Boeing 727 modificado que vuela en arcos parabólicos. La caída en picado permite disfrutar de 20-30 segundos sin peso durante unas 15 veces.",
-        "image": require("../img/experienceWeightlessness.jpg")
+        "image": require("../img/experienceWeightlessness.jpg"),
+        "alt": "Turistas en el A310"
     },
     {
         "fileHTML": "suborbitalFlights",
         "title": "Vuelos suborbitales",
         "description": "Existen aviones que, aunque no lleguen hasta el espacio, sí vuelan lo suficientemente alto como para percibir la curvatura de la Tierra. Diversas empresas rusas ofrecen vuelos supersónicos para civiles. Para ello, utilizan aviones MIG-29, uno d elos pocos jets que pueden acelerar verticalmente como los cohetes.",
-        "image": require("../img/suborbitalFlights.png")
+        "image": require("../img/suborbitalFlights.png"),
+        "alt": "Piloto del MIG-2"
     },
     {
         "fileHTML": "virginGalactic",
         "title": "Vuelos espaciales de Virgen Galactic",
         "description": "La compañía estadounidense Virgen Galactic del magnate Richard Branson, ofrece vuelos suborbitales que prometen alcanzar el límite del espacio. Este límite se encuentra a unos 100 km de altura en lo que se conoce como la línea de Kármán.",
-        "image": require("../img/virginGalactic.jpg")
+        "image": require("../img/virginGalactic.jpg"),
+        "alt": "Aeronave Virgin Galactic"
     },
     {
         "fileHTML": "spaceStation",
         "title": "Visita la Estación Espacial",
         "description": "Más de 200 personas han visitado la Estación Espacial Internacional hasta la fecha. Sin embargo, solo 7 civiles afortunados (y adinerados) han cumplido este sueño.",
-        "image": require("../img/spaceStation.jpg")
+        "image": require("../img/spaceStation.jpg"),
+        "alt": "Estación espacial"
     }
 ]
 
@@ -39,6 +43,7 @@ function renderCategory(category) {
     let divImage = createElement("div")
     let categoryImage = createElement("img", "multimedia");
     categoryImage.src = category.image;
+    categoryImage.alt = category.alt;
     divImage.append(categoryImage)
     categoryPage.append(divImage)
 
