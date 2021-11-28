@@ -103,6 +103,7 @@ a {
     width: 60%;
     height: 60%;
     margin-left: 10%;
+    clip-path: circle(55%);
 }
 
 .video {
