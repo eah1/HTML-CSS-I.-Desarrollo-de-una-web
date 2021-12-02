@@ -49,6 +49,29 @@ footer p {
     text-align: center;
 }
 
+.clip-teclado {
+    width: 20%;
+    height: auto;
+    clip-path: polygon(
+            0% 0%,
+            100% 0%,
+            100% 75%,
+            75% 75%,
+            75% 100%,
+            50% 75%,
+            0% 75%
+    );
+}
+
+.footer_logo figure figcaption {
+    width: 10%;
+    height: 10%;
+    margin: 0;
+    padding-bottom: 0;
+    padding-top: 10px;
+    color: #ea5106
+}
+
 footer div a:link, footer div a:hover, footer div a:visited {
     color: black;
     text-decoration: none;
@@ -189,27 +212,46 @@ a {
         padding-bottom: 0;
     }
 
-    .copyright{
+    .copyright {
         grid-column: 1 / span 2;
     }
 
-    footer div {
-        margin:10px;
+    .clip-teclado {
+        width: 45%;
+        height: auto;
     }
-    .rrss a, .nosotros a{
+
+    .footer_logo {
+        grid-column: 1 / span 2;
+        text-align: center;
+        margin: 0;
+    }
+    .footer_logo figure {
+        margin: 0;
+    }
+
+    footer div {
+        margin: 10px;
+    }
+
+    .rrss a, .nosotros a {
         margin-right: 10px;
     }
+
     .rrss a {
         margin-left: 40px;
     }
+
     .nosotros a {
         display: inline-block;
     }
+
     .nosotros {
         text-align: left;
         margin-left: 60px;
     }
-    .rrss{
+
+    .rrss {
         text-align: right;
         margin-right: 100px;
         font-size: 0.8rem;
