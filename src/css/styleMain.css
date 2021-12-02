@@ -18,6 +18,42 @@ main {
     padding: 50px 0;
 }
 
+footer {
+    text-align: center;
+    color: black;
+    background-color: #ea5106;
+    padding-bottom: 1%;
+    padding-top: 5px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.7rem;
+    width: 100%;
+}
+
+footer div {
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+footer p {
+    text-align: center;
+}
+
+.nosotros a {
+    display: block;
+}
+
+.rrss a {
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+footer div a:link, footer div a:hover, footer div a:visited {
+    color: black;
+    text-decoration: none;
+}
+
 h1, h2, h3, h4 {
     font-weight: bold;
 }
@@ -141,6 +177,43 @@ a {
         width: 70%;
         height: 25%;
     }
+
+    footer {
+        display: grid;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        text-align: left;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr auto;
+        font-size: 0.7rem;
+        padding-bottom: 0;
+    }
+
+    .copyright{
+        grid-column: 1 / span 2;
+    }
+
+    footer div {
+        margin:10px;
+    }
+    .rrss a, .nosotros a{
+        margin-right: 10px;
+    }
+    .rrss a {
+        margin-left: 40px;
+    }
+    .nosotros a {
+        display: inline-block;
+    }
+    .nosotros {
+        text-align: left;
+        margin-left: 60px;
+    }
+    .rrss{
+        text-align: right;
+        margin-right: 100px;
+        font-size: 0.8rem;
+    }
 }
 
 .anim-typewriter {
@@ -173,16 +246,26 @@ a {
 }
 
 @keyframes change-color {
-    25% { color: #ea5106; }
-    50% { color: black; }
-    75% { color: #ea5106; }
+    25% {
+        color: #ea5106;
+    }
+    50% {
+        color: black;
+    }
+    75% {
+        color: #ea5106;
+    }
 }
 
 @keyframes grow-shrink {
-    50% { transform: scale(1.5); }
+    50% {
+        transform: scale(1.5);
+    }
 }
 
 @keyframes expand {
-    50% { word-spacing: 20px; }
+    50% {
+        word-spacing: 20px;
+    }
 }
 
