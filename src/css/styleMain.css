@@ -1,9 +1,39 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+:root {
+    font-family: "Noto Serif", serif;
+    --principal-color: #ea5106;
+}
+
+.links a:link {
+    color: blue;
+}
+
+.links a:visited {
+    color: #437A16;
+}
+
+.links a:focus {
+    border-bottom: 1px solid;
+    background: #BAE498;
+}
+
+.links a:hover {
+    border-bottom: 1px solid;
+    background: #CDFEAA;
+}
+
+.links a:active {
+    background: #265301;
+    color: #CDFEAA;
+}
 
 *, *:after, *:before {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
 }
 
 body {
@@ -73,29 +103,6 @@ a {
     margin-left: 2em;
 }
 
-.links a:link {
-    color: blu;
-}
-
-.links a:visited {
-    color: #437A16;
-}
-
-.links a:focus {
-    border-bottom: 1px solid;
-    background: #BAE498;
-}
-
-.links a:hover {
-    border-bottom: 1px solid;
-    background: #CDFEAA;
-}
-
-.links a:active {
-    background: #265301;
-    color: #CDFEAA;
-}
-
 .multimedia {
     border: 1px solid #ea5106;
     border-radius: 4px;
@@ -103,11 +110,21 @@ a {
     width: 60%;
     height: 60%;
     margin-left: 10%;
+    clip-path: circle(55%);
 }
 
 .video {
-    margin-left: 15%;
-    margin-right: 15%;
+    width: 65%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+@media (max-width: 1100px) {
+    .body {
+        width: 90%;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
 }
 
 @media (max-width: 450px) {
@@ -140,6 +157,4 @@ a {
         width: 70%;
         height: 25%;
     }
-
 }
-

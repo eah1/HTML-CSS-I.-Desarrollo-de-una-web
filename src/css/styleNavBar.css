@@ -8,7 +8,7 @@
 }
 
 header, .menu-container{
-    background-color: #ea5106;
+    background-color: var(--principal-color);
 }
 
 .menu-btn{
@@ -42,6 +42,10 @@ header{
 .nav-link{
     text-decoration: none;
     font-size: 1.2rem;
+}
+
+.nav-link img {
+    clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
 }
 
 .menu-container{

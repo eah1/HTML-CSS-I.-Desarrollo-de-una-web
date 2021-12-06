@@ -1,12 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="../css/styleNavBar.css">
-    <link rel="stylesheet" href="../css/stylePresentation.css">
     <link rel="stylesheet" href="../css/styleMain.css">
+    <link rel="stylesheet" href="../css/stylePresentation.css">
+    <link rel="stylesheet" href="../css/styleNavBar.css">
+    <link rel="stylesheet" href="../css/styleFooter.css">
+    <link rel="stylesheet" href="../css/styleAnimations.css">
+
+    <script src="https://kit.fontawesome.com/12ee87ddfa.js" crossorigin="anonymous"></script>
 
     <title>Presentación</title>
 </head>
@@ -39,8 +43,8 @@
 <main>
     <div class="body">
         <div>
-            <h2>El turismo espacial ya ha despegado</h2>
             <article>
+                <h2 class="anim-title">El turismo espacial ya ha despegado</h2>
                 <p>
                     Ya hay compañías con prototipos y viajes testados, operadores turísticos especializados y
                     multimillonarios
@@ -58,7 +62,7 @@
 
                 <iframe class="video" width="560"
                         height="315"
-                        src="https://www.youtube.com/embed/FcgXNFS5WIE" title="YouTube video player" frameborder="0"
+                        src="https://www.youtube.com/embed/FcgXNFS5WIE" title="YouTube video player"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen>
                 </iframe>
@@ -74,8 +78,8 @@
             </article>
         </div>
         <div>
-            <h2>2022, completo</h2>
             <article>
+                <h2 class="anim-title">2022, completo</h2>
                 <p>
                     Los precios van a estar al alcance de muy pocos, pero la irrupción de las compañías privadas ya está
                     revolucionando al sector. A la cabeza, Virgin Galactic, de Richard Branson, y Blue Origin, de Jeff
@@ -97,8 +101,8 @@
             </article>
         </div>
         <div>
-            <h2>Cualquiera puede hacerse astronauta</h2>
             <article>
+                <h2 class="anim-title">Cualquiera puede hacerse astronauta</h2>
                 <p>
                     En su libro publicado en 1979, el escritor y periodista estadounidense Tom Wolfe describió a los
                     astronautas como personas con "lo que hay que tener" (así se titula el libro), refiriéndose a que
@@ -128,7 +132,30 @@
             </article>
         </div>
     </div>
-    <script src="../js/navBar.js"></script>
 </main>
+<footer>
+    <div class="aboutAs">
+        <a href="#" title="Sobre nosotros">Sobre nosotros</a>
+        <a href="#" title="Aviso legal">Aviso legal</a>
+        <a href="#" title="Política de privacidad">Política de privacidad</a>
+    </div>
+    <div class="socialNetworks">
+        <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" title="Youtube"><i class="fab fa-youtube"></i></a>
+    </div>
+    <div class="footerLogo">
+        <figure>
+            <img class="footerClip" src="../img/spaceTravel_opt.jpg" title="Space Travel" alt="Space Travel"/>
+            <figcaption>Space Travel</figcaption>
+        </figure>
+    </div>
+    <div class="copyright">
+        <p>
+            © 2021-2022 Eduard Arnedo Hidalgo. Trabajo realizado para la asignatura Herramientas HTML y CSS I.
+        </p>
+    </div>
+</footer>
+<script type="module" src="../js/navBar.js"></script>
 </body>
 </html>
