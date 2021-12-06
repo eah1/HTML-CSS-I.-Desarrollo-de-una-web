@@ -1,0 +1,111 @@
+:root {
+    --principal-color: #ea5106;
+    --font-family: "Montserrat", sans-serif;
+}
+
+footer {
+    text-align: center;
+    color: black;
+    background-color: var(--principal-color);
+    padding-bottom: 1%;
+    padding-top: 5px;
+    font-family: var(--font-family);
+    font-size: 0.7rem;
+    width: 100%;
+}
+
+footer div {
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+footer p {
+    text-align: center;
+}
+
+footer div a:link, footer div a:hover, footer div a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+.aboutAs a {
+    display: block;
+}
+
+.socialNetworks a {
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.footerClip {
+    width: 20%;
+    height: auto;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+}
+
+.footerLogo figure figcaption {
+    margin: 0;
+    padding-bottom: 0;
+    color: var(--principal-color);
+}
+
+@media (max-width: 750px) {
+    footer {
+        display: grid;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        text-align: left;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr auto;
+        font-size: 0.7rem;
+        padding-bottom: 0;
+    }
+
+    footer div {
+        margin: 10px;
+    }
+
+    .aboutAs a {
+        display: inline-block;
+    }
+
+    .aboutAs {
+        text-align: left;
+        margin-left: 60px;
+    }
+
+    .socialNetworks {
+        text-align: right;
+        margin-right: 100px;
+        font-size: 0.8rem;
+    }
+
+    .socialNetworks a {
+        margin-left: 40px;
+    }
+
+    .socialNetworks a, .aboutAs a {
+        margin-right: 10px;
+    }
+
+    .footerLogo {
+        grid-column: 1 / span 2;
+        text-align: center;
+        margin: 0;
+    }
+
+    .footerLogo figure {
+        margin: 0;
+    }
+
+    .footerClip {
+        width: 45%;
+        height: auto;
+    }
+
+    .copyright {
+        grid-column: 1 / span 2;
+    }
+}

@@ -1,6 +1,13 @@
 
-body, html {
+.backgroundPage {
+    background-image: url("../img/spaceTravel.jpg");
+    width: 100%;
     height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    opacity: 0.6;
 }
 
 .index {
@@ -11,35 +18,19 @@ body, html {
 }
 
 .index h1 {
-    font-size: 70px;
-    color: #ea5106;
+    font-size: 40px;
+    height: 25%;
+    color: var(--principal-color);
 }
 
 .index h3 {
     font-size: 20px;
-    color: #ea5106;
-}
-
-.bg {
-    /* The image used */
-    background-image: url("../img/spaceTravel.jpg");
-
-    /* Full height */
-    width: 100%;
-    height: 100%;
-
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-
-    /* Opacity background page */
-    opacity: 0.6;
+    height: 25%;
+    color: var(--principal-color);
 }
 
 @media only screen and (max-width: 480px) {
-    .bg {
+    .backgroundPage {
         background-image: url("../img/spaceTravel_opt.jpg");
     }
 
@@ -50,8 +41,32 @@ body, html {
     }
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 1100px) {
+    .index h1 {
+        font-size: 30px;
+    }
+
+    .index h3 {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 850px) {
     .index h1 {
         font-size: 20px;
+    }
+
+    .index h3 {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .index h1 {
+        font-size: 10px;
+    }
+
+    .index h3 {
+        font-size: 5px;
     }
 }

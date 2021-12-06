@@ -8,7 +8,7 @@
 }
 
 header, .menu-container{
-    background-color: #ea5106;
+    background-color: var(--principal-color);
 }
 
 .menu-btn{
