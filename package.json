@@ -4,7 +4,8 @@
     "parcel:build": "parcel build src/index.html",
     "clean": "rimraf dist .parcel-cache .cache-loader",
     "dev": "npm-run-all clean parcel:dev",
-    "build": "npm-run-all clean parcel:build"
+    "build": "npm-run-all clean parcel:build",
+    "htmlvalidate": "html-validate node_modules/.bin/html-validate src/**/*.html"
   },
   "devDependencies": {
     "autoprefixer": "^9.8.8",
@@ -12,5 +13,8 @@
     "parcel": "^2.0.1",
     "postcss-custom-selectors": "^6.0.0",
     "rimraf": "^3.0.2"
+  },
+  "dependencies": {
+    "html-validate": "^6.1.4"
   }
 }
