@@ -107,8 +107,6 @@ a {
     border: 1px solid #ea5106;
     border-radius: 4px;
     padding: 5px;
-    width: 60%;
-    height: 60%;
     margin-left: 10%;
     clip-path: circle(55%);
 }
@@ -146,11 +144,6 @@ a {
         width: 90%;
         font-size: 18px;
         padding-left: 1%;
-    }
-
-    .multimedia {
-        width: 75%;
-        height: 70%;
     }
 
     .video {
