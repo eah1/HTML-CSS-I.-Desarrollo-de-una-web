@@ -146,6 +146,10 @@ a {
         padding-left: 1%;
     }
 
+    .body picture {
+        width: 60%;
+    }
+
     .video {
         width: 70%;
         height: 25%;
