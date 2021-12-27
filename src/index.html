@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="icon" type="image/svg+xml" href="img/spaceTravelLogo.png">
+    <link rel="icon" type="image/svg+xml" href="img/spaceTravelLogo.webp">
     <link rel="icon" type="image/png" href="img/spaceTravelLogo.svg">
 
-    <link rel="stylesheet" href="css/styleMain.css">
-    <link rel="stylesheet" href="css/styleIndex.css">
-    <link rel="stylesheet" href="css/styleNavBar.css">
-    <link rel="stylesheet" href="css/styleFooter.css">
-    <link rel="stylesheet" href="css/styleAnimations.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/styleMain.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/styleIndex.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/styleNavBar.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/styleFooter.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/styleAnimations.css">
 
-    <script src="https://kit.fontawesome.com/12ee87ddfa.js" crossorigin="anonymous"></script>
+    <script async type="module" src="https://kit.fontawesome.com/12ee87ddfa.js"></script>
+    <script async type="module" src="js/navBar.js"></script>
 
     <title>Space travel</title>
 </head>
@@ -26,7 +27,12 @@
                 <ul class="nav">
                     <li class="nav-item">
                         <a href="" class="nav-link">
-                            <img src="img/spaceTravelLogo.png" loading="lazy" alt="Space travel">
+                            <img class="multimedia" loading="lazy" src="img/spaceTravelLogo_200.webp"
+                                 alt="Turistas en el A310"
+                                 srcset="img/spaceTravelLogo_400.webp 400w,
+                                         img/spaceTravelLogo_600.webp 600w,
+                                         img/spaceTravelLogo_800.webp 800w"
+                                 sizes="(max-width:480px) 230px, (max-width:800px) 380px, (max-width:1024px) 590px">
                         </a>
                     </li>
                     <li class="nav-item">
@@ -58,12 +64,12 @@
                                 <h3>Experimenta la ingravidez</h3>
                                 <div>
                                     <a href="page/experienceWeightlessness.html" title="Experimenta la ingravidez">
-                                        <img class="multimedia" loading="lazy" src="img/experienceWeightlessness.jpg"
+                                        <img class="multimedia" loading="lazy" src="img/experienceWeightlessness.avif"
                                              alt="Turistas en el A310"
-                                             srcset="img/experienceWeightlessness_200.jpg 200w,
-                                                    img/experienceWeightlessness_400.jpg 400w,
-                                                    img/experienceWeightlessness_600.jpg 600w,
-                                                    img/experienceWeightlessness_800.jpg 800w"
+                                             srcset="img/experienceWeightlessness_200.avif 200w,
+                                                    img/experienceWeightlessness_400.avif 400w,
+                                                    img/experienceWeightlessness_600.avif 600w,
+                                                    img/experienceWeightlessness_800.avif 800w"
                                              sizes="(max-width:320px) 180px, (max-width:480px) 230px, (max-width:800px) 380px, (max-width:1024px) 590px, 650px">
                                     </a>
                                 </div>
@@ -74,12 +80,12 @@
                                 <h3>Vuelos suborbitales</h3>
                                 <div>
                                     <a href="page/suborbitalFlights.html" title="Vuelos suborbitales">
-                                        <img class="multimedia" loading="lazy" src="img/suborbitalFlights.png"
+                                        <img class="multimedia" loading="lazy" src="img/suborbitalFlights.avif"
                                              alt="Piloto del MIG-29"
-                                             srcset="img/suborbitalFlights_200.png 200w,
-                                                    img/suborbitalFlights_400.png 400w,
-                                                    img/suborbitalFlights_600.png 600w,
-                                                    img/suborbitalFlights_800.png 800w"
+                                             srcset="img/suborbitalFlights_200.avif 200w,
+                                                    img/suborbitalFlights_400.avif 400w,
+                                                    img/suborbitalFlights_600.avif 600w,
+                                                    img/suborbitalFlights_800.avif 800w"
                                              sizes="(max-width:320px) 180px, (max-width:480px) 230px, (max-width:800px) 380px, (max-width:1024px) 590px, 650px">
                                     </a>
                                 </div>
@@ -91,12 +97,12 @@
                                 <h3>Vuelos espaciales de Virgen Galactic</h3>
                                 <div>
                                     <a href="page/virginGalactic.html" title="Vuelos espaciales de Virgen Galactic">
-                                        <img class="multimedia" loading="lazy" src="img/virginGalactic.jpg"
+                                        <img class="multimedia" loading="lazy" src="img/virginGalactic.avif"
                                              alt="Aeronave Virgin Galactic"
-                                             srcset="img/virginGalactic_200.jpg 200w,
-                                                    img/virginGalactic_400.jpg 400w,
-                                                    img/virginGalactic_600.jpg 600w,
-                                                    img/virginGalactic_800.jpg 800w"
+                                             srcset="img/virginGalactic_200.avif 200w,
+                                                    img/virginGalactic_400.avif 400w,
+                                                    img/virginGalactic_600.avif 600w,
+                                                    img/virginGalactic_800.avif 800w"
                                              sizes="(max-width:320px) 180px, (max-width:480px) 230px, (max-width:800px) 380px, (max-width:1024px) 590px, 650px">
                                     </a>
                                 </div>
@@ -107,12 +113,12 @@
                                 <h3>Visita la Estación Espacial</h3>
                                 <div>
                                     <a href="page/spaceStation.html" title="Visita la Estación Espacial">
-                                        <img class="multimedia" loading="lazy" src="img/spaceStation.jpg"
+                                        <img class="multimedia" loading="lazy" src="img/spaceStation.avif"
                                              alt="Estación espacial"
-                                             srcset="img/spaceStation_200.jpg 200w,
-                                                    img/spaceStation_400.jpg 400w,
-                                                    img/spaceStation_600.jpg 600w,
-                                                    img/spaceStation_800.jpg 800w"
+                                             srcset="img/spaceStation_200.avif 200w,
+                                                    img/spaceStation_400.avif 400w,
+                                                    img/spaceStation_600.avif 600w,
+                                                    img/spaceStation_800.avif 800w"
                                              sizes="(max-width:320px) 180px, (max-width:480px) 230px, (max-width:800px) 380px, (max-width:1024px) 590px, 650px">
                                     </a>
                                 </div>
@@ -137,7 +143,7 @@
     </div>
     <div class="footerLogo">
         <figure>
-            <img class="footerClip" loading="lazy" src="img/spaceTravel_opt.jpg" title="Space Travel"
+            <img class="footerClip" loading="lazy" src="img/spaceTravel_opt.webp" title="Space Travel"
                  alt="Space Travel">
             <figcaption>Space Travel</figcaption>
         </figure>
@@ -148,6 +154,5 @@
         </p>
     </div>
 </footer>
-<script  async type="module" src="js/navBar.js"></script>
 </body>
 </html>
