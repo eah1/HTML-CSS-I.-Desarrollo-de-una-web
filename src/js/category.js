@@ -60,6 +60,7 @@ function renderCategory(category) {
     let categoryImage = createElement("img", "multimedia");
     categoryImage.src = category.image;
     categoryImage.alt = category.alt;
+    categoryImage.loading = "lazy";
     categoryImage.srcset = category.image200 + " 200w," + category.image400 + " 400w," + category.image600 + " 600w," + category.image800 + " 800w"
     categoryImage.sizes = "(max-width:320px) 180px, (max-width:480px) 230px, (max-width:800px) 380px, (max-width:1024px) 590px, 650px"
     divImage.append(categoryImage)
